@@ -232,4 +232,4 @@ This implementation prioritizes:
 
 The project can be directly reviewed through Swagger endpoints and test output.
 
-Credits -Ansh Singhal
+Credits - Ansh Singhal
