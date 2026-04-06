@@ -36,6 +36,8 @@ jobs:
         run: |
           mkdir -p _site
           cp -R docs/. _site/
+          # Safety guard: never publish a custom domain from this repository.
+          find _site -type f -name "CNAME" -delete
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
