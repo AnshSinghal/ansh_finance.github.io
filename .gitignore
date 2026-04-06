@@ -9,3 +9,9 @@ __pycache__/
 dist/
 *.egg-info/
 .pytest_cache/
+
+# Keep this repository focused on Pages workflow only.
+.github/*
+!.github/workflows/
+.github/workflows/*
+!.github/workflows/pages-deploy.yml
