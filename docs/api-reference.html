@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finance API | API Reference</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Endpoint Map</p>
+        <h1>API Reference Snapshot</h1>
+        <p class="lead">Base path: <code>/api/v1</code>. Use the runtime Swagger UI for full request/response schemas.</p>
+      </header>
+
+      <section class="table-wrap" aria-label="API groups">
+        <table>
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Endpoints</th>
+              <th>Access</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Auth</td>
+              <td><code>POST /auth/register/</code>, <code>POST /auth/login/</code>, <code>POST /auth/logout/</code>, <code>POST /auth/refresh/</code></td>
+              <td>Public for register/login</td>
+            </tr>
+            <tr>
+              <td>Users</td>
+              <td><code>GET /users/</code>, <code>GET /users/me/</code>, <code>PATCH /users/{id}/role/</code></td>
+              <td>Admin for management endpoints</td>
+            </tr>
+            <tr>
+              <td>Records</td>
+              <td><code>GET /records/</code>, <code>POST /records/</code>, <code>PATCH /records/{id}/</code></td>
+              <td>Role-restricted (admin for write)</td>
+            </tr>
+            <tr>
+              <td>Dashboard</td>
+              <td><code>GET /dashboard/summary/</code>, <code>/categories/</code>, <code>/trends/</code>, <code>/recent/</code></td>
+              <td>Analyst/admin for categories and trends</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="info-banner" aria-label="Runtime docs">
+        <h2>Runtime Interactive Docs</h2>
+        <p>
+          When the backend is running locally, use:
+          <code>http://127.0.0.1:8000/docs/</code> and <code>http://127.0.0.1:8000/redoc/</code>.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p><a href="./index.html">Back to docs hub</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+:root {
+  --bg: #f6f3eb;
+  --ink: #1c1916;
+  --muted: #595145;
+  --panel: #fffaf0;
+  --line: #d7cfbf;
+  --brand: #0d5a63;
+  --brand-ink: #ffffff;
+  --card-shadow: 0 12px 24px rgba(28, 25, 22, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 10%, #efe8d8 0, transparent 35%),
+    radial-gradient(circle at 90% 90%, #e7f2f0 0, transparent 35%),
+    var(--bg);
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1000px, 92vw);
+  margin: 2.5rem auto;
+}
+
+.hero {
+  background: linear-gradient(145deg, #10222a, #0d5a63 70%, #228083);
+  color: var(--brand-ink);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  margin: 0.4rem 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.lead {
+  margin: 0;
+  max-width: 70ch;
+}
+
+.card-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: var(--card-shadow);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card a,
+.footer a {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.info-banner {
+  margin-top: 1rem;
+  border-left: 5px solid #b3451f;
+  background: #fff4ef;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.footer {
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  padding: 0.6rem;
+  vertical-align: top;
+}
+
+code {
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.92em;
+  background: #efe8d8;
+  padding: 0.1rem 0.25rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    margin: 1rem auto;
+  }
+
+  .hero {
+    padding: 1.2rem;
+  }
+}

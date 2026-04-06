@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finance API | Architecture</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Architecture Boundary</p>
+        <h1>Pages and API Deployment Model</h1>
+        <p class="lead">GitHub Pages serves static docs; Django serves runtime API traffic.</p>
+      </header>
+
+      <section class="card">
+        <h2>What GitHub Pages Hosts</h2>
+        <p>Only static files from the repository, such as HTML, CSS, images, and markdown.</p>
+      </section>
+
+      <section class="card">
+        <h2>What GitHub Pages Does Not Host</h2>
+        <p>Django app runtime, database, Celery jobs, or dynamic API execution.</p>
+      </section>
+
+      <section class="card">
+        <h2>Recommended Runtime Targets</h2>
+        <p>Deploy Django backend on a runtime platform (for example Render, Railway, Fly.io, ECS, or a VM).</p>
+      </section>
+
+      <footer class="footer">
+        <p><a href="./index.html">Back to docs hub</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

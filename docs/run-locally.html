@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finance API | Run Locally</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Local Development</p>
+        <h1>Run Locally</h1>
+        <p class="lead">Use these commands to run the Django API on your machine.</p>
+      </header>
+
+      <section class="card">
+        <h2>Setup Commands</h2>
+        <pre><code>python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[test]"
+cp .env.example .env
+python manage.py migrate
+python manage.py runserver</code></pre>
+      </section>
+
+      <section class="card">
+        <h2>Validation</h2>
+        <p>Run tests with:</p>
+        <pre><code>pytest tests/ -v</code></pre>
+      </section>
+
+      <section class="card">
+        <h2>Docker Option</h2>
+        <pre><code>docker compose up --build</code></pre>
+      </section>
+
+      <footer class="footer">
+        <p><a href="./index.html">Back to docs hub</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
