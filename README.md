@@ -231,3 +231,5 @@ This implementation prioritizes:
 - practical testing coverage across auth, users, records, and dashboard
 
 The project can be directly reviewed through Swagger endpoints and test output.
+
+Credits -Ansh Singhal
